@@ -1,6 +1,6 @@
 body {
-    background-color: lightblue;
-    font-family: "Open Sans", sans-serif;
+    background-color: maroon;
+    font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -13,5 +13,5 @@ body {
 }
 
 h1 {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;background-color: maroon;
 }
