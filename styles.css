@@ -1,15 +1,13 @@
-
-body {
-    background-image: url('taxi.jpg');
-        }
-
-
-img {
-    width: 50px;
+img{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto; } 
-
+    z-index: -1;
+    
+}
 h1 {
     font-family: "times new roman", serif;
     color: white;
@@ -21,7 +19,7 @@ h1 {
     padding: 0;
     text-align: center;
     position: relative;
-    top: 205px;
+    top: 300px;
 } 
 
 h2 {
@@ -34,7 +32,7 @@ h2 {
     padding: 0;
     text-align: center;
     position: relative;
-    top: 100%;
+    top: 350px;
 }
 
 h3 {
@@ -47,19 +45,16 @@ h3 {
    text-align: center;
     margin: 0;
     padding: 0; 
+    top: 375px;
+    position: relative;
 }
 
 
-span{
-    color: rgb(255, 255, 255);
-  text-decoration-style: solid;
-  width: 180px;
-  font-size: 20px;
-    font-family: 'Times New Roman', serif;
-    text-align: left;
-    display: block; 
+div.container {
     position: relative;
-    top: 50px;
+    text-align: center;
+    color: white;
+    top: 100%
 }
 
 h4{
