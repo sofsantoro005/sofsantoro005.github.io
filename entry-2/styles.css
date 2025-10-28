@@ -1,18 +1,58 @@
 body {
-    background-color: rgb(153, 127, 214);
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    font-size: 1rem; /* 16px */
-    line-height: 1.5; /* 24px */
-    color: #000000;
-    margin: 0;
-    padding: 0;
+  background: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Anton", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  padding: 5rem 1rem;
 }
 
 h1 {
-    font-family: "verdana", sans-serif;
+  font-size: 7vw;
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: black;
+  margin: 0 auto;
+  max-width: 900px;
+  position: relative;
+  z-index: 2;
+}
+
+.images img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+}
+
+/* Custom positions for each image */
+.images img:nth-child(1) { top: 5%; left: 5%; }
+.images img:nth-child(2) { top: 10%; right: 10%; }
+.images img:nth-child(3) { top: 40%; left: 10%; }
+.images img:nth-child(4) { bottom: 10%; left: 15%; }
+.images img:nth-child(5) { top: 35%; right: 15%; }
+.images img:nth-child(6) { bottom: 20%; right: 10%; }
+.images img:nth-child(7) { top: 60%; left: 50%; transform: translateX(-50%); }
+.images img:nth-child(8) { bottom: 5%; right: 40%; }
+.images img:nth-child(9) { top: 20%; right: 45%; }
+
+.credit {
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-style: italic;
 }
 
