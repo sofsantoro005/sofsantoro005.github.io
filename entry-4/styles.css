@@ -1,45 +1,128 @@
-body{
-  background-color: rgb(231, 200, 227);
-}
-
-
-h1 {
-  font-size: 100px;
-  font-family: "times new roman", serif;
-  color: white; 
-  font-weight: 900;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
+* {
   margin: 0;
   padding: 0;
-  text-align: center;
+  box-sizing: border-box;
+  font-family:"Anton", sans-serif;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 20px; 
+
+body {
+  background-color: #111;
+  color: #000;
+}
+
+/* Navigation */
+nav {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 30px 0 80px;
+}
+
+.img-container {
+  position: relative;
+  width: 120px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* make image containers wider and responsive */
+.img-container {
+  flex: 0 1 45%;
+  width: 45%;
+  max-width: 640px;
+  min-width: 220px;
+}
+
+/* image styles */
+.img-container img {
   width: 100%;
-  height: 100vh; 
+  border-radius: 3px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  object-fit: cover;
+  height: 360px;
+  filter: brightness(0.9);
+  border: 1px solid #000000;
+  position: relative;
 }
 
-.page {
-  background-color: rgb(255, 102, 0);
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-sizing: border-box; 
-  overflow: auto; 
+.img-container:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
-p {
-  font-family: 'Times New Roman', Times, serif;
-  color: white; 
-  font-weight: 700; 
-  line-height: 1.3; 
-  font-size: 20px;
-  text-align: center;
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 20px;
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  font-size: 12px;
+  padding: 5px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
   text-align: center;
 }
 
+.img-container:hover .info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer banner */
+.footer-banner {
+  background-color: #ffda44;
+  text-align: center;
+  padding: 60px 0;
+  position: relative;
+}
+
+.footer-banner .tagline {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 10px;
+  color: #000;
+}
+
+.footer-banner h1 {
+  font-size: 120px;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

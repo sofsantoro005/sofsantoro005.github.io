@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Anton", sans-serif;
+  font-family:"Anton", sans-serif;
 }
+
 
 body {
   background-color: #111;
@@ -11,12 +12,12 @@ body {
 }
 
 /* Navigation */
- nav {
+nav {
   background-color: #fff;
   padding: 10px 0;
 }
 
- nav ul {
+nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -30,7 +31,7 @@ nav a {
   font-weight: 500;
 }
 
- nav a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -51,6 +52,15 @@ nav a {
   transition: transform 0.3s ease;
 }
 
+/* make image containers wider and responsive */
+.img-container {
+  flex: 0 1 45%;
+  width: 45%;
+  max-width: 640px;
+  min-width: 220px;
+}
+
+/* image styles */
 .img-container img {
   width: 100%;
   border-radius: 3px;
@@ -58,15 +68,17 @@ nav a {
   display: block;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   object-fit: cover;
-  height: 160px;
+  height: 360px;
   filter: brightness(0.9);
-  border: 1px solid #cd0d0d;
+  border: 1px solid #000000;
   position: relative;
 }
+
 .img-container:hover img {
-  transform: scale(1.3);
+  transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+
 .info {
   position: absolute;
   bottom: 0;
@@ -89,13 +101,13 @@ nav a {
 
 /* Footer banner */
 .footer-banner {
-  background-color: #b70505;
+  background-color: #ffda44;
   text-align: center;
   padding: 60px 0;
   position: relative;
 }
 
- .footer-banner .tagline {
+.footer-banner .tagline {
   position: absolute;
   top: 20px;
   right: 40px;
@@ -103,8 +115,14 @@ nav a {
   color: #000;
 }
 
- .footer-banner h1 {
+.footer-banner h1 {
   font-size: 120px;
   font-weight: 900;
   letter-spacing: -3px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
