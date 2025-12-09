@@ -19,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* ========== TOPBAR ========== */
@@ -50,12 +51,14 @@ body {
   max-width: calc(var(--max-content-width) + var(--sidebar-width));
   margin: 30px auto;
   padding: 0 20px;
+  
 }
 
 /* left logo/sidebar */
 .sidebar {
   width: var(--sidebar-width);
   padding-top: 40px;
+  min-width: 150px; 
 }
 .logo {
   writing-mode: vertical-rl; /* tall stacked look */
@@ -89,6 +92,7 @@ body {
   position: sticky;
   top: 110px;
   align-items: flex-start;
+  flex-shrink: 0;
   /* spacing between each number is based on the entry gap variable */
 }
 .number-column span {
@@ -192,3 +196,4 @@ span.hover-effect:hover {
   text-align: center;
 
 }
+
