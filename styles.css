@@ -16,6 +16,9 @@ body {
   color: #000;
   background: #fff;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* ========== TOPBAR ========== */
@@ -175,4 +178,17 @@ span.hover-effect:hover {
 .num-item:hover img {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.05);
+}
+
+.intro-text {
+ max-width: 800px;
+  margin: auto auto 40px auto;  /* centers horizontally + pushes to bottom */
+  padding: 0 20px;
+  font-family: var(--font-serif);
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: #000;
+  text-align: center;
+
 }
