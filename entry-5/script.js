@@ -5,7 +5,8 @@ const images = [
     "../my-images/buildings/IMG_4393.JPG",
     "../my-images/buildings/IMG_1037.jpeg", 
     "../my-images/art/IMG_5112.JPG", 
-    "../my-images/interiors/IMG_0736.jpeg"
+    "../my-images/interiors/IMG_0653.jpeg"
+    
 ];
 
 // picks random image
